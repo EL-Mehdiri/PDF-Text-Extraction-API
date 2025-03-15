@@ -1,20 +1,41 @@
 {
-  "name": "pfr-extract-python",
+  "name": "pdf-extractor-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "A REST API to extract structured text, font details, and positioning from PDF files using Node.js and Python.",
+  "main": "src/app.js",
   "type": "commonjs",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "lint": "eslint . --fix",
+    "format": "prettier --write .",
+    "test": "jest"
+  },
+  "keywords": [
+    "pdf",
+    "text-extraction",
+    "ocr",
+    "nodejs",
+    "express",
+    "pdfminer",
+    "font-detection"
+  ],
+  "author": "EL-Mehdiri",
+  "license": "MIT",
   "dependencies": {
-    "child_process": "^1.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
+    "jest": "^29.6.2",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
