@@ -20,7 +20,7 @@ The API processes PDFs using **Node.js (Express.js)** and calls a **Python scrip
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/your-repo/pdf-extractor-api.git
+git clone https://github.com/EL-Mehdiri/PDF-Text-Extraction-API.git
 cd pdf-extractor-api
 ```
 
